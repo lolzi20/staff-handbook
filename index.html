@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0911">
+  <title>Zes Hood | Staff Handbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo">Z</div>
+        <div>
+          <strong>ZES HOOD</strong>
+          <small>STAFF HANDBOOK</small>
+        </div>
+      </div>
+
+      <div class="sidebar-label">STAFF RESOURCES</div>
+      <nav id="navigation" aria-label="Handbook navigation"></nav>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-label">COMMUNITY</div>
+        <a class="discord-link"
+           href="https://discord.gg/gxAMa2vgG"
+           target="_blank" rel="noopener noreferrer">
+          <span>Discord Server</span>
+          <span>↗</span>
+        </a>
+        <div class="sidebar-profile">
+          <div class="profile-icon">ZH</div>
+          <div>
+            <strong>Zes Hood</strong>
+            <small>Moderation Team</small>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-button" id="menuButton"
+                  aria-label="Open navigation">☰</button>
+          <div class="breadcrumb">
+            Workspace <span>/</span>
+            <strong id="breadcrumb">Overview</strong>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <div class="search-box">
+            <span class="search-icon">⌕</span>
+            <input type="search" id="searchInput"
+                   placeholder="Search handbook..."
+                   aria-label="Search handbook">
+            <kbd>Ctrl K</kbd>
+          </div>
+          <div class="top-avatar">ZH</div>
+        </div>
+      </header>
+
+      <main class="content" id="content"></main>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Zes Hood Staff Handbook</span>
+        <span>Staff Resources & Moderation Guidelines</span>
+      </footer>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"
+       aria-live="polite"></div>
+</body>
+</html>
