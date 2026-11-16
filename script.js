@@ -1,20 +1,82 @@
 
+"use strict";
+
 // ==========================================
 // ZES HOOD STAFF HANDBOOK
+// COMPLETE SCRIPT
 // ==========================================
 
+// ==========================================
 // WEBSITE SECTIONS
+// ==========================================
 
 const sections = [
-  { id: "overview", icon: "⌂", name: "Overview", desc: "Handbook home and directory" },
-  { id: "rules", icon: "▤", name: "Staff Rules", desc: "Staff conduct, reports and regulations" },
-  { id: "tickets", icon: "▣", name: "Ticket System", desc: "Ticket handling and organisation" },
-  { id: "bans", icon: "⬡", name: "Ban Logging", desc: "Ban evidence and logging procedures" },
-  { id: "promotions", icon: "♛", name: "Promotions & Quotas", desc: "Staff progression and weekly requirements" },
-  { id: "loa", icon: "◷", name: "LOA System", desc: "Leave of absence and reduced quotas" },
-  { id: "strikes", icon: "⚑", name: "Strikes & Stripping", desc: "Staff disciplinary procedures" },
-  { id: "evidence", icon: "▶", name: "Ban Evidence Library", desc: "Video examples of bannable offences" },
-  { id: "commands", icon: "⌘", name: "Command Formats", desc: "Copyable staff commands and templates" }
+  {
+    id: "overview",
+    icon: "⌂",
+    name: "Overview",
+    desc: "Handbook home and directory"
+  },
+  {
+    id: "rules",
+    icon: "▤",
+    name: "Staff Rules",
+    desc: "Staff conduct, reports and regulations"
+  },
+  {
+    id: "roles",
+    icon: "♜",
+    name: "Staff Role Responsibilities",
+    desc: "Responsibilities for every staff rank"
+  },
+  {
+    id: "starhosters",
+    icon: "★",
+    name: "Star Hosters",
+    desc: "Star challenge hosting, logs and procedures"
+  },
+  {
+    id: "tickets",
+    icon: "▣",
+    name: "Ticket System",
+    desc: "Ticket handling and organisation"
+  },
+  {
+    id: "bans",
+    icon: "⬡",
+    name: "Ban Logging",
+    desc: "Ban evidence and logging procedures"
+  },
+  {
+    id: "promotions",
+    icon: "♛",
+    name: "Promotions & Quotas",
+    desc: "Staff progression and weekly requirements"
+  },
+  {
+    id: "loa",
+    icon: "◷",
+    name: "LOA System",
+    desc: "Leave of absence and reduced quotas"
+  },
+  {
+    id: "strikes",
+    icon: "⚑",
+    name: "Strikes & Stripping",
+    desc: "Staff disciplinary procedures"
+  },
+  {
+    id: "evidence",
+    icon: "▶",
+    name: "Ban Evidence Library",
+    desc: "Video examples of bannable offences"
+  },
+  {
+    id: "commands",
+    icon: "⌘",
+    name: "Command Formats",
+    desc: "Copyable staff commands and templates"
+  }
 ];
 
 // ==========================================
@@ -22,6 +84,9 @@ const sections = [
 // ==========================================
 
 const handbook = {
+
+  // STAFF RULES
+
   rules: [
     {
       title: "Staff Conduct & Professionalism",
@@ -64,7 +129,7 @@ Staff members must investigate reports carefully and follow the correct ban proc
       title: "Macro Abuse / Package Abuse",
       content: `MACRO ABUSE
 
-Macro abuse occurs when a player continuously shoots without stopping their macro, such as repeatedly shooting without crouching.
+Macro abuse occurs when a player continuously shoots without stopping their macro.
 
 PACKAGE ABUSE
 
@@ -166,6 +231,380 @@ All evidence must be collected using the approved panel and aimviewer.`
     }
   ],
 
+  // STAFF ROLE RESPONSIBILITIES
+
+  roles: [
+    {
+      title: "Trial Moderator",
+      content: `Trial Moderators are responsible for actively moderating Zes Hood and demonstrating that they are capable of fulfilling their staff duties.
+
+RESPONSIBILITIES
+
+• Remain active in-game.
+• Monitor players for rule violations.
+• Issue appropriate in-game bans when necessary.
+• Ensure every ban is supported by valid evidence.
+• Record bans using the correct ban log format.
+• Meet the assigned weekly quota.
+• Follow all staff regulations and moderation procedures.
+• Maintain professional behaviour when dealing with players.
+
+Trial Moderators are expected to demonstrate reliability and consistent performance.`
+    },
+    {
+      title: "Moderator",
+      content: `Moderators are responsible for maintaining a fair and enjoyable in-game environment.
+
+RESPONSIBILITIES
+
+• Actively moderate the game.
+• Investigate reports and suspicious activity.
+• Issue valid in-game bans when necessary.
+• Record every ban with supporting evidence.
+• Meet the required weekly quota.
+• Remain consistently active.
+• Follow staff rules and moderation procedures.
+• Assist players when appropriate.
+
+Moderators must demonstrate consistent activity and responsible use of their permissions.`
+    },
+    {
+      title: "Head Moderator",
+      content: `Head Moderators must maintain high moderation standards and demonstrate consistent activity.
+
+RESPONSIBILITIES
+
+• Actively moderate Zes Hood.
+• Issue appropriate in-game bans.
+• Ensure all bans have valid supporting evidence.
+• Complete the assigned weekly quota.
+• Remain active and reliable.
+• Follow all staff regulations.
+• Demonstrate professionalism and responsible moderation.
+
+Head Moderators are expected to set a positive example through their activity and conduct.`
+    },
+    {
+      title: "Administrator",
+      content: `Administrators are responsible for maintaining effective in-game moderation and following all staff procedures.
+
+RESPONSIBILITIES
+
+• Remain active in-game.
+• Investigate and punish rule violations appropriately.
+• Issue in-game bans with valid evidence.
+• Record every ban accurately.
+• Meet the assigned weekly quota.
+• Use administrative permissions responsibly.
+• Follow all staff regulations.
+• Maintain professional standards.
+
+Administrators must consistently fulfil their moderation responsibilities.`
+    },
+    {
+      title: "Head Administrator",
+      content: `Head Administrators must demonstrate a high standard of activity, professionalism and moderation.
+
+RESPONSIBILITIES
+
+• Actively moderate Zes Hood.
+• Issue appropriate in-game bans.
+• Ensure every ban has valid evidence.
+• Record bans accurately and on time.
+• Complete the required weekly quota.
+• Remain consistently active.
+• Follow all staff regulations.
+• Demonstrate responsible use of administrative permissions.
+
+Head Administrators are expected to maintain strong moderation performance.`
+    },
+    {
+      title: "HR (High Rank)",
+      content: `High Rank staff members are responsible for managing crew strikes and supervising staff performance.
+
+RESPONSIBILITIES
+
+• Manage and record crew strikes accurately.
+• Ensure crew strike procedures are followed.
+• Monitor staff activity and performance.
+• Ensure moderators fulfil their assigned duties.
+• Check that staff members follow regulations.
+• Address misconduct and staff-related concerns.
+• Ensure staff members are meeting their requirements.
+• Maintain professional standards throughout the staff team.
+
+HR members must ensure that the staff members under their supervision are performing their responsibilities correctly.`
+    },
+    {
+      title: "Manager",
+      content: `Managers are responsible for supervising lower-ranking staff members and ensuring the staff team operates effectively.
+
+RESPONSIBILITIES
+
+• Supervise all staff roles below Manager.
+• Monitor staff activity and performance.
+• Ensure lower-ranking staff fulfil their duties.
+• Oversee crew strike management.
+• Ensure crew strike records remain accurate.
+• Address misconduct and performance concerns.
+• Ensure staff members follow all regulations.
+• Hold lower-ranking staff accountable for their responsibilities.
+
+Managers must provide effective supervision and maintain staff standards.`
+    },
+    {
+      title: "Head Manager",
+      content: `Head Managers are responsible for overseeing Managers, HR members and all lower-ranking staff.
+
+RESPONSIBILITIES
+
+• Supervise Managers, HR and lower-ranking staff.
+• Ensure management members fulfil their responsibilities.
+• Oversee crew strike procedures.
+• Monitor staff performance and activity.
+• Ensure staff regulations are enforced correctly.
+• Address problems involving lower-ranking staff.
+• Maintain professional standards across the staff team.
+• Ensure management decisions are handled responsibly.
+
+Head Managers must ensure that the staff team and management structure operate effectively.`
+    },
+    {
+      title: "Director",
+      content: `Directors are responsible for supervising the staff team and ensuring all staff members follow Zes Hood regulations.
+
+RESPONSIBILITIES
+
+• Oversee staff conduct and performance.
+• Ensure staff members follow all regulations.
+• Monitor management and lower-ranking staff.
+• Address serious staff-related concerns.
+• Ensure staff members fulfil their responsibilities.
+• Maintain professional standards across the server.
+• Hold staff members accountable for misconduct.
+
+Directors must ensure the staff team operates fairly, professionally and effectively.`
+    },
+    {
+      title: "Staff Director",
+      content: `Staff Directors are responsible for overseeing the staff team and ensuring that all ranks perform their duties correctly.
+
+RESPONSIBILITIES
+
+• Supervise staff performance across all ranks.
+• Ensure every staff member follows the regulations.
+• Monitor staff activity and professionalism.
+• Ensure management members fulfil their responsibilities.
+• Address misconduct and failures to follow staff procedures.
+• Maintain accountability throughout the staff team.
+• Ensure staff standards are consistently enforced.
+
+Staff Directors must maintain an organised and responsible staff team.`
+    },
+    {
+      title: "Overseer",
+      content: `Overseers are responsible for ensuring the entire Zes Hood staff team follows regulations and fulfils its responsibilities.
+
+RESPONSIBILITIES
+
+• Oversee the overall performance of the staff team.
+• Ensure all staff ranks follow the rules.
+• Monitor management and senior leadership.
+• Ensure staff members fulfil their assigned duties.
+• Address serious concerns involving staff conduct.
+• Maintain accountability throughout the staff hierarchy.
+• Ensure regulations are enforced consistently.
+• Maintain high professional standards across Zes Hood.
+
+Overseers must ensure the staff team and management structure operate correctly and responsibly.`
+    }
+  ],
+
+  // STAR HOSTERS
+
+  starhosters: [
+    {
+      title: "Star Hoster Responsibilities",
+      content: `Star Hosters are responsible for organising, supervising and accurately recording star challenges.
+
+HOSTER REQUIREMENTS
+
+• Follow all official star challenge rules.
+• Ensure challenges are conducted fairly.
+• Record every challenge and its result.
+• Track stars awarded or removed.
+• Verify that required clips are provided.
+• Monitor daily challenge limits.
+• Track challenge declines and cooldowns.
+• Ensure required PC checks are arranged.
+• Report rule violations appropriately.
+
+Star Hosters must remain professional and maintain accurate records.`
+    },
+    {
+      title: "Star Defence Logs",
+      content: `Star Hosters must record the result whenever a star player defends or fails to defend their star.
+
+Each log must identify:
+
+• The challenged star player
+• The challenger
+• The final score
+• Whether the star was defended or lost
+• The player's updated star count
+• The date
+
+Use the Star Defence Log format provided below.
+
+Hosters must ensure that the result and star count are accurate before posting.`
+    },
+    {
+      title: "Star Tryout Logs",
+      content: `Star Hosters must record every successful star tryout.
+
+Each log must include:
+
+• The player awarded a star
+• The tryout region
+• The player's updated star count
+• The date
+
+Use the Star Tryout Log format provided below.
+
+Hosters must verify the result before recording the award.`
+    },
+    {
+      title: "Challenge Declines",
+      content: `Star Hosters must monitor and record challenge declines.
+
+Star players are allowed 3 challenge declines before losing a star.
+
+Declining a challenge while not on cooldown results in losing a star, according to the challenge rules.
+
+HOSTER RESPONSIBILITIES
+
+• Record every decline.
+• Check the player's cooldown status.
+• Track the player's total declines.
+• Ensure star deductions are recorded correctly.
+• Report disputes or unclear situations.
+
+All decisions must follow the official star challenge rules.`
+    },
+    {
+      title: "Clip Verification",
+      content: `Star Hosters MUST ensure every kill in a star challenge is clipped.
+
+REQUIREMENTS
+
+• Every kill must have a valid clip.
+• Clips must be available for verification.
+• Hosters must review missing or disputed evidence.
+• Required evidence must be included in challenge records.
+
+Missing required clips result in an automatic 5–0 loss under the star challenge rules.
+
+Hosters must enforce this requirement consistently.`
+    },
+    {
+      title: "Daily Challenge Limits",
+      content: `Star Hosters must ensure players do not exceed the permitted daily challenge limit.
+
+RULE
+
+A maximum of 2 challenges may be completed per day.
+
+Exceeding this limit results in losing a star.
+
+HOSTER RESPONSIBILITIES
+
+• Track challenges completed by each player.
+• Verify whether the daily limit has been reached.
+• Prevent additional challenges beyond the permitted limit.
+• Record any violations and star deductions.`
+    },
+    {
+      title: "Ducking Challenges",
+      content: `Star Hosters must monitor players who avoid or refuse challenges.
+
+Ducking is only permitted when the player has an excusable reason.
+
+HOSTER RESPONSIBILITIES
+
+• Record relevant challenge refusals.
+• Check whether the player has a valid reason.
+• Monitor repeated avoidance.
+• Report violations of the ducking rules.
+• Apply the official challenge procedures consistently.
+
+Hosters must not ignore unjustified challenge avoidance.`
+    },
+    {
+      title: "Keyboard Overlay",
+      content: `Star Hosters must ensure keyboard overlays are enabled during cups.
+
+HOSTER RESPONSIBILITIES
+
+• Verify the keyboard overlay requirement before the cup begins.
+• Ensure participants follow the requirement.
+• Record and report any violations.
+• Follow the applicable cup rules when issues occur.
+
+Keyboard overlay requirements must be enforced consistently.`
+    },
+    {
+      title: "Server & Range Selection",
+      content: `The challenged star player is responsible for selecting the server and range.
+
+HOSTER RESPONSIBILITIES
+
+• Allow the challenged player to select the server.
+• Allow the challenged player to select the range.
+• Ensure the agreed settings are followed.
+• Record the selected server and range.
+• Resolve or report disagreements appropriately.
+
+Hosters must not unfairly change the challenge settings.`
+    },
+    {
+      title: "Daily Participation",
+      content: `Star players must complete at least 1 challenge per day unless they have an excusable reason.
+
+HOSTER RESPONSIBILITIES
+
+• Monitor daily participation.
+• Track completed challenges.
+• Record valid excuses when provided.
+• Identify players who fail to meet the requirement.
+• Report participation violations appropriately.
+
+Star Hosters must ensure activity requirements are monitored fairly.`
+    },
+    {
+      title: "PC Check Requirements",
+      content: `Star Hosters must monitor challenge, war and tryout results to ensure required PC checks are arranged.
+
+PC CHECK REQUIREMENTS
+
+• After every second challenge won.
+• After every second war won.
+• After each tryout won, as specified in the star rules.
+
+HOSTER RESPONSIBILITIES
+
+• Track challenge wins.
+• Track war wins.
+• Record tryout wins.
+• Identify when a PC check is required.
+• Arrange the required check through authorised staff.
+• Record whether the check has been completed.
+
+Hosters must not ignore or bypass required checks.`
+    }
+  ],
+
+  // TICKET SYSTEM
+
   tickets: [
     {
       title: "Ticket Handling",
@@ -245,6 +684,8 @@ Staff reports must be handled by authorised HR+ members.`
     }
   ],
 
+  // BAN LOGGING
+
   bans: [
     {
       title: "Ban Logging Requirements",
@@ -317,6 +758,8 @@ The Ban Evidence Library contains reference clips to help staff understand diffe
 Reference clips do not replace evidence collected from the player being investigated.`
     }
   ],
+
+  // PROMOTIONS & QUOTAS
 
   promotions: [
     {
@@ -397,6 +840,8 @@ Head Administrators may have one strike removed for every 100 bans.`
     }
   ],
 
+  // LOA SYSTEM
+
   loa: [
     {
       title: "LOA Requirements",
@@ -456,6 +901,8 @@ Reason:`
     }
   ],
 
+  // STRIKES & STRIPPING
+
   strikes: [
     {
       title: "Strike Records",
@@ -503,7 +950,7 @@ They must complete the Trial Moderator requirements again.`
 
 // ==========================================
 // BAN EVIDENCE LIBRARY
-// ALL SEVEN CLIPS
+// ALL SEVEN CLIPS PRESERVED
 // ==========================================
 
 const evidenceClips = [
@@ -547,7 +994,7 @@ const evidenceClips = [
     title: "Exploiting",
     category: "EXPLOITS",
     description: "Reference footage illustrating exploit-related gameplay violations.",
-    url: "https://drive.google.com/file/d/1i_kQC6Sa2W6H2tkfR9Jw7-3ZeCalO6oG/view?usp=sharing"
+    url: "https://drive.google.com/file/d/1VYvWx-c62Dwzr_WboZJCBKu7nV65jLx4/view?usp=sharing"
   },
   {
     id: "hitbox",
@@ -557,6 +1004,34 @@ const evidenceClips = [
     url: "https://drive.google.com/file/d/1AebOLqYSgXgh72hpFLbh0DK3mNOmeiN-/view?usp=sharing"
   }
 ];
+
+// ==========================================
+// STAR LOG FORMATS
+// ==========================================
+
+const starLogFormats = {
+  defenceWon: `@Star Player has successfully defended their star against challenger @Challenger.
+
+Score: 5-4
+
+@Star Player still has 3 stars to their name.
+
+Date: MM/DD`,
+
+  defenceLost: `@Star Player has failed to defend their star against challenger @Challenger.
+
+Score: 4-5
+
+@Star Player now has 2 stars to their name.
+
+Date: MM/DD`,
+
+  tryout: `@Player has been awarded a Star for outperforming in NA Tryouts. 🎉
+
+@Player now has 4 stars to their name.
+
+Date: MM/DD`
+};
 
 // ==========================================
 // COMMAND FORMATS
@@ -602,6 +1077,18 @@ const commands = [
   {
     title: "LOA Request Format",
     command: "Discord Username:\nLOA Start Date:\nLOA End Date:\nDuration: (1–3 Days)\nReason:"
+  },
+  {
+    title: "Star Defence Log — Successful Defence",
+    command: starLogFormats.defenceWon
+  },
+  {
+    title: "Star Defence Log — Failed Defence",
+    command: starLogFormats.defenceLost
+  },
+  {
+    title: "Star Tryout Log",
+    command: starLogFormats.tryout
   }
 ];
 
@@ -650,12 +1137,13 @@ function createNotice(text) {
 
 function createAccordion(item, open = false) {
   const details = element("details", "accordion");
-  const summary = element("summary", "", item.title);
-  const body = element("div", "accordion-body", item.content);
 
-  details.append(summary, body);
+  details.append(
+    element("summary", "", item.title),
+    element("div", "accordion-body", item.content)
+  );
+
   details.open = open;
-
   return details;
 }
 
@@ -664,14 +1152,11 @@ function createAccordion(item, open = false) {
 // ==========================================
 
 function navigate(pageId) {
-  const section = sections.find(item => item.id === pageId);
-
-  if (!section) {
+  if (!sections.some(item => item.id === pageId)) {
     pageId = "overview";
   }
 
   const currentSection = sections.find(item => item.id === pageId);
-
   breadcrumb.textContent = currentSection.name;
 
   document.querySelectorAll(".nav-button").forEach(button => {
@@ -698,6 +1183,10 @@ function navigate(pageId) {
     renderPromotions();
   } else if (pageId === "loa") {
     renderLOA();
+  } else if (pageId === "starhosters") {
+    renderStarHosters();
+  } else if (pageId === "roles") {
+    renderRoles();
   } else {
     renderHandbookSection(pageId);
   }
@@ -717,7 +1206,6 @@ function navigate(pageId) {
 
 function renderOverview() {
   const hero = element("div", "hero");
-
   const title = element("h1");
 
   title.append(
@@ -739,7 +1227,7 @@ function renderOverview() {
     element(
       "p",
       "",
-      "Your central resource for staff regulations, ticket procedures, ban logging, promotions, leave of absence, and moderation evidence."
+      "Your central resource for staff regulations, role responsibilities, star hosting, ticket procedures, ban logging, promotions, and moderation evidence."
     ),
     button
   );
@@ -769,7 +1257,6 @@ function renderOverview() {
       );
 
       card.addEventListener("click", () => navigate(section.id));
-
       grid.append(card);
     });
 
@@ -777,7 +1264,7 @@ function renderOverview() {
 }
 
 // ==========================================
-// HANDBOOK SECTIONS
+// STANDARD HANDBOOK SECTIONS
 // ==========================================
 
 function renderHandbookSection(pageId) {
@@ -794,6 +1281,84 @@ function renderHandbookSection(pageId) {
   });
 
   content.append(list);
+}
+
+// ==========================================
+// STAFF ROLE RESPONSIBILITIES
+// ==========================================
+
+function renderRoles() {
+  content.append(
+    createHeading(
+      "Staff Role Responsibilities",
+      "Official duties and expectations for each staff rank."
+    )
+  );
+
+  content.append(
+    createNotice(
+      "Every staff member is responsible for following Zes Hood regulations and fulfilling the duties assigned to their rank. Management and senior leadership must ensure that lower-ranking staff are performing their responsibilities correctly."
+    )
+  );
+
+  const list = element("div", "accordion-list");
+
+  handbook.roles.forEach((item, index) => {
+    list.append(createAccordion(item, index === 0));
+  });
+
+  content.append(list);
+}
+
+// ==========================================
+// STAR HOSTERS
+// ==========================================
+
+function renderStarHosters() {
+  content.append(
+    createHeading(
+      "Star Hosters",
+      "Official hosting responsibilities, challenge regulations, evidence requirements and logging procedures."
+    )
+  );
+
+  content.append(
+    createNotice(
+      "Star Hosters must accurately record every challenge, enforce the official star rules, verify required evidence, and monitor challenge limits and PC check requirements."
+    )
+  );
+
+  const list = element("div", "accordion-list");
+
+  handbook.starhosters.forEach((item, index) => {
+    list.append(createAccordion(item, index === 0));
+  });
+
+  content.append(list);
+
+  const heading = element("div", "section-heading");
+
+  heading.append(
+    element("h2", "", "Star Hoster Log Formats"),
+    element("span", "", "COPYABLE TEMPLATES")
+  );
+
+  content.append(heading);
+
+  createCommandCard(
+    "Star Defence Log — Successful Defence",
+    starLogFormats.defenceWon
+  );
+
+  createCommandCard(
+    "Star Defence Log — Failed Defence",
+    starLogFormats.defenceLost
+  );
+
+  createCommandCard(
+    "Star Tryout Log",
+    starLogFormats.tryout
+  );
 }
 
 // ==========================================
@@ -904,9 +1469,7 @@ function renderEvidence() {
     const card = element("article", "evidence-card");
     const preview = element("div", "evidence-preview");
 
-    preview.append(
-      element("div", "play-icon", "▶")
-    );
+    preview.append(element("div", "play-icon", "▶"));
 
     const info = element("div", "evidence-info");
 
@@ -916,18 +1479,13 @@ function renderEvidence() {
       element("p", "", clip.description)
     );
 
-    const link = element(
-      "a",
-      "evidence-link",
-      "Watch Evidence ↗"
-    );
+    const link = element("a", "evidence-link", "Watch Evidence ↗");
 
     link.href = clip.url;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
 
     info.append(link);
-
     card.append(preview, info);
     grid.append(card);
   });
@@ -941,18 +1499,13 @@ function renderEvidence() {
 
 function createCommandCard(title, command) {
   const card = element("div", "command-card");
-
-  card.append(
-    element("h3", "", title)
-  );
+  card.append(element("h3", "", title));
 
   const commandBox = element("div", "command-box");
   const code = element("code", "", command);
   const copyButton = element("button", "copy-button", "Copy");
 
-  copyButton.addEventListener("click", () => {
-    copyText(command);
-  });
+  copyButton.addEventListener("click", () => copyText(command));
 
   commandBox.append(code, copyButton);
   card.append(commandBox);
@@ -963,7 +1516,7 @@ function renderCommands() {
   content.append(
     createHeading(
       "Command Formats",
-      "Copy official moderation commands, ticket commands and staff templates."
+      "Copy official moderation commands, ticket commands, star hosting logs and staff templates."
     )
   );
 
@@ -1019,10 +1572,7 @@ function searchHandbook(query) {
   }
 
   content.replaceChildren(
-    createHeading(
-      "Search Results",
-      `Results matching "${query}"`
-    )
+    createHeading("Search Results", `Results matching "${query}"`)
   );
 
   breadcrumb.textContent = "Search Results";
@@ -1038,9 +1588,7 @@ function searchHandbook(query) {
     items.forEach((item, index) => {
       const text = `${item.title} ${item.content}`.toLowerCase();
 
-      if (!text.includes(query)) {
-        return;
-      }
+      if (!text.includes(query)) return;
 
       results++;
 
@@ -1076,12 +1624,9 @@ function searchHandbook(query) {
   });
 
   evidenceClips.forEach(clip => {
-    const text =
-      `${clip.title} ${clip.category} ${clip.description}`.toLowerCase();
+    const text = `${clip.title} ${clip.category} ${clip.description}`.toLowerCase();
 
-    if (!text.includes(query)) {
-      return;
-    }
+    if (!text.includes(query)) return;
 
     results++;
 
@@ -1101,12 +1646,9 @@ function searchHandbook(query) {
   });
 
   commands.forEach(item => {
-    const text =
-      `${item.title} ${item.command}`.toLowerCase();
+    const text = `${item.title} ${item.command}`.toLowerCase();
 
-    if (!text.includes(query)) {
-      return;
-    }
+    if (!text.includes(query)) return;
 
     results++;
 
@@ -1127,9 +1669,7 @@ function searchHandbook(query) {
 
   if (results === 0) {
     content.append(
-      createNotice(
-        "No matching results found. Try another search term."
-      )
+      createNotice("No matching results found. Try another search term.")
     );
   }
 }
@@ -1140,7 +1680,6 @@ function searchHandbook(query) {
 
 sections.forEach(section => {
   const button = element("button", "nav-button");
-
   button.dataset.page = section.id;
 
   button.append(
@@ -1179,11 +1718,10 @@ document.addEventListener("keydown", event => {
   }
 });
 
-document.getElementById("menuButton")
-  .addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-    overlay.classList.toggle("show");
-  });
+document.getElementById("menuButton").addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+  overlay.classList.toggle("show");
+});
 
 overlay.addEventListener("click", closeMenu);
 
