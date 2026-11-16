@@ -3,90 +3,24 @@
 
 // ==========================================
 // ZES HOOD STAFF HANDBOOK
-// COMPLETE SCRIPT
-// ==========================================
-
-// ==========================================
-// WEBSITE SECTIONS
+// COMPLETE UPDATED SCRIPT.JS
 // ==========================================
 
 const sections = [
-  {
-    id: "overview",
-    icon: "⌂",
-    name: "Overview",
-    desc: "Handbook home and directory"
-  },
-  {
-    id: "rules",
-    icon: "▤",
-    name: "Staff Rules",
-    desc: "Staff conduct, reports and regulations"
-  },
-  {
-    id: "roles",
-    icon: "♜",
-    name: "Staff Role Responsibilities",
-    desc: "Responsibilities for every staff rank"
-  },
-  {
-    id: "starhosters",
-    icon: "★",
-    name: "Star Hosters",
-    desc: "Star challenge hosting, logs and procedures"
-  },
-  {
-    id: "tickets",
-    icon: "▣",
-    name: "Ticket System",
-    desc: "Ticket handling and organisation"
-  },
-  {
-    id: "bans",
-    icon: "⬡",
-    name: "Ban Logging",
-    desc: "Ban evidence and logging procedures"
-  },
-  {
-    id: "promotions",
-    icon: "♛",
-    name: "Promotions & Quotas",
-    desc: "Staff progression and weekly requirements"
-  },
-  {
-    id: "loa",
-    icon: "◷",
-    name: "LOA System",
-    desc: "Leave of absence and reduced quotas"
-  },
-  {
-    id: "strikes",
-    icon: "⚑",
-    name: "Strikes & Stripping",
-    desc: "Staff disciplinary procedures"
-  },
-  {
-    id: "evidence",
-    icon: "▶",
-    name: "Ban Evidence Library",
-    desc: "Video examples of bannable offences"
-  },
-  {
-    id: "commands",
-    icon: "⌘",
-    name: "Command Formats",
-    desc: "Copyable staff commands and templates"
-  }
+  { id: "overview", icon: "⌂", name: "Overview", desc: "Handbook home and directory" },
+  { id: "rules", icon: "▤", name: "Staff Rules", desc: "Staff conduct, reports and regulations" },
+  { id: "roles", icon: "♜", name: "Staff Role Responsibilities", desc: "Responsibilities for every staff rank" },
+  { id: "starhosters", icon: "★", name: "Star Hosters", desc: "Star challenge hosting, logs and procedures" },
+  { id: "tickets", icon: "▣", name: "Ticket System", desc: "Ticket handling and organisation" },
+  { id: "bans", icon: "⬡", name: "Ban Logging", desc: "Ban evidence and logging procedures" },
+  { id: "promotions", icon: "♛", name: "Promotions & Quotas", desc: "Staff progression and weekly requirements" },
+  { id: "loa", icon: "◷", name: "LOA System", desc: "Leave of absence and reduced quotas" },
+  { id: "strikes", icon: "⚑", name: "Strikes & Stripping", desc: "Staff disciplinary procedures" },
+  { id: "evidence", icon: "▶", name: "Ban Evidence Library", desc: "Video examples of bannable offences" },
+  { id: "commands", icon: "⌘", name: "Command Formats", desc: "Copyable staff commands and templates" }
 ];
 
-// ==========================================
-// STAFF HANDBOOK CONTENT
-// ==========================================
-
 const handbook = {
-
-  // STAFF RULES
-
   rules: [
     {
       title: "Staff Conduct & Professionalism",
@@ -216,6 +150,22 @@ Staff members remain responsible for their vouches even if they were unaware tha
       content: `All Zes Hood staff members must be at least 16 years old.`
     },
     {
+      title: "ESP Evidence Requirement",
+      content: `Staff MUST collect 2 valid clips demonstrating ESP before banning a player for this offence.
+
+ESP involves using unauthorised information to locate players through walls or in concealed hiding spots without a legitimate way to know their position.
+
+Unusual player discovery alone is not enough to confirm ESP.
+
+Review both clips carefully and seek HR assistance when the evidence is unclear.`
+    },
+    {
+      title: "Stand Exploit Ban Requirement",
+      content: `When a stand exploit is confirmed with valid evidence, both the player controlling the alternate accounts and the alternate accounts being used as stands must be banned.
+
+Staff must verify which accounts are involved and document the evidence for each account before taking action.`
+    },
+    {
       title: "Panel & Aimviewer Requirements",
       content: `Staff members MUST provide 2 valid panel aimviewer clips when banning players for:
 
@@ -231,25 +181,37 @@ All evidence must be collected using the approved panel and aimviewer.`
     }
   ],
 
-  // STAFF ROLE RESPONSIBILITIES
-
   roles: [
     {
       title: "Trial Moderator",
-      content: `Trial Moderators are responsible for actively moderating Zes Hood and demonstrating that they are capable of fulfilling their staff duties.
+      content: `Trial Moderators are responsible for handling support tickets, investigating player reports and submitting properly documented ban requests.
 
 RESPONSIBILITIES
 
-• Remain active in-game.
-• Monitor players for rule violations.
-• Issue appropriate in-game bans when necessary.
-• Ensure every ban is supported by valid evidence.
-• Record bans using the correct ban log format.
-• Meet the assigned weekly quota.
-• Follow all staff regulations and moderation procedures.
-• Maintain professional behaviour when dealing with players.
+• Actively claim and handle tickets.
+• Investigate player reports and collect valid evidence.
+• Submit in-game ban requests in the designated ban requests channel.
+• Use the same format as official ban logs for every request.
+• Remain active, professional and follow staff regulations.
+• Work towards promotion by completing 25 ban requests OR earning 15 staff vouches.
 
-Trial Moderators are expected to demonstrate reliability and consistent performance.`
+IMPORTANT — BAN PERMISSIONS
+
+Trial Moderators CANNOT use /ban or issue in-game bans until they receive the In-Game Moderator role.
+
+BAN REQUEST CHANNEL
+
+https://discord.com/channels/1521519108162719744/1525463538955714612
+
+REQUIRED BAN REQUEST FORMAT
+
+User: (username)
+Reason: (reason)
+Evidence: (clip link)
+
+All requests must contain valid evidence.
+
+An authorised in-game moderator must review and issue any resulting ban.`
     },
     {
       title: "Moderator",
@@ -420,8 +382,6 @@ Overseers must ensure the staff team and management structure operate correctly 
     }
   ],
 
-  // STAR HOSTERS
-
   starhosters: [
     {
       title: "Star Hoster Responsibilities",
@@ -442,36 +402,19 @@ HOSTER REQUIREMENTS
 Star Hosters must remain professional and maintain accurate records.`
     },
     {
-      title: "Star Defence Logs",
-      content: `Star Hosters must record the result whenever a star player defends or fails to defend their star.
+      title: "Challenge Logging",
+      content: `Star Hosters MUST record every star challenge.
 
-Each log must identify:
+Every log must clearly identify the players involved, the challenge result, the final score and the player's updated star count.
 
-• The challenged star player
-• The challenger
-• The final score
-• Whether the star was defended or lost
-• The player's updated star count
-• The date
+Hosters must use the correct format for the result:
 
-Use the Star Defence Log format provided below.
+• Star Defence Log — when a player defends or fails to defend their star.
+• Star Tryout Log — when a player earns a star through tryouts.
 
-Hosters must ensure that the result and star count are accurate before posting.`
-    },
-    {
-      title: "Star Tryout Logs",
-      content: `Star Hosters must record every successful star tryout.
+All results must be recorded accurately.
 
-Each log must include:
-
-• The player awarded a star
-• The tryout region
-• The player's updated star count
-• The date
-
-Use the Star Tryout Log format provided below.
-
-Hosters must verify the result before recording the award.`
+Star Hosters must not leave challenges unlogged or submit false results.`
     },
     {
       title: "Challenge Declines",
@@ -600,10 +543,46 @@ HOSTER RESPONSIBILITIES
 • Record whether the check has been completed.
 
 Hosters must not ignore or bypass required checks.`
+    },
+    {
+      title: "Star Defence Log",
+      content: `Use this format when a star player successfully defends or fails to defend their star.
+
+SUCCESSFUL DEFENCE
+
+@Star Player has successfully defended their star against challenger @Challenger.
+
+Score: 5-4
+
+@Star Player still has 3 stars to their name.
+
+Date: MM/DD
+
+FAILED DEFENCE
+
+@Star Player has failed to defend their star against challenger @Challenger.
+
+Score: 3-5
+
+@Star Player now has 2 stars to their name.
+
+Date: MM/DD
+
+Replace the example usernames, scores, star counts and dates with the actual results.`
+    },
+    {
+      title: "Star Tryout Log",
+      content: `Use this format when a player wins tryouts and earns a star.
+
+@Player has been awarded a Star for outperforming in NA Tryouts. 🎉
+
+@Player now has 4 stars to their name.
+
+Date: MM/DD
+
+Replace the example username, region, star count and date with the actual results.`
     }
   ],
-
-  // TICKET SYSTEM
 
   tickets: [
     {
@@ -684,8 +663,6 @@ Staff reports must be handled by authorised HR+ members.`
     }
   ],
 
-  // BAN LOGGING
-
   bans: [
     {
       title: "Ban Logging Requirements",
@@ -724,6 +701,42 @@ No exceptions.
 Evidence must be collected through the approved panel and aimviewer.`
     },
     {
+      title: "ESP Ban Evidence",
+      content: `Staff MUST provide 2 valid clips before banning a player for ESP.
+
+ESP is an exploit that can reveal other players' positions through walls or in concealed locations.
+
+Both clips must provide convincing evidence of the exploit.
+
+Finding a hidden player does not automatically prove ESP.
+
+Staff should investigate carefully and contact HR when uncertain.`
+    },
+    {
+      title: "Stand Exploit Bans",
+      content: `When a stand exploit is confirmed, both the controller and the alternate accounts used as stands must be banned.
+
+Staff must identify the accounts involved and provide valid evidence.
+
+Every affected account must be recorded accurately in the ban logs.`
+    },
+    {
+      title: "Trial Moderator Ban Requests",
+      content: `Trial Moderators cannot issue in-game bans or use /ban until they receive the In-Game Moderator role.
+
+Instead, they must submit requests in:
+
+https://discord.com/channels/1521519108162719744/1525463538955714612
+
+Use the official ban log format:
+
+User: (username)
+Reason: (reason)
+Evidence: (clip link)
+
+Only authorised staff may issue the resulting ban.`
+    },
+    {
       title: "Ban Timing",
       content: `Staff members must log all bans within 5 minutes of issuing them.
 
@@ -758,8 +771,6 @@ The Ban Evidence Library contains reference clips to help staff understand diffe
 Reference clips do not replace evidence collected from the player being investigated.`
     }
   ],
-
-  // PROMOTIONS & QUOTAS
 
   promotions: [
     {
@@ -840,8 +851,6 @@ Head Administrators may have one strike removed for every 100 bans.`
     }
   ],
 
-  // LOA SYSTEM
-
   loa: [
     {
       title: "LOA Requirements",
@@ -901,8 +910,6 @@ Reason:`
     }
   ],
 
-  // STRIKES & STRIPPING
-
   strikes: [
     {
       title: "Strike Records",
@@ -949,8 +956,7 @@ They must complete the Trial Moderator requirements again.`
 };
 
 // ==========================================
-// BAN EVIDENCE LIBRARY
-// ALL SEVEN CLIPS PRESERVED
+// BAN EVIDENCE LIBRARY — 15 CATEGORIES
 // ==========================================
 
 const evidenceClips = [
@@ -958,80 +964,134 @@ const evidenceClips = [
     id: "lock",
     title: "Lock",
     category: "AIM EXPLOITS",
-    description: "Reference footage for identifying lock-related cheating. Two valid panel aimviewer clips are required for a ban.",
+    description: "When a player uses aim assistance exploits to automatically lock their crosshair onto another player, tracking them with unnatural accuracy. Staff MUST provide 2 valid panel aimviewer clips before banning.",
     url: "https://drive.google.com/file/d/1a3hhIg7UMzKpwro45v94W5MltS2GV8fs/view?usp=sharing"
   },
   {
     id: "silentaim",
     title: "Silent Aim",
     category: "AIM EXPLOITS",
-    description: "Reference footage for identifying silent aim. Staff must collect two valid panel aimviewer clips.",
+    description: "When a player's shots hit targets even though their crosshair is not properly aimed at them. Staff MUST provide 2 valid panel aimviewer clips before banning.",
     url: "https://drive.google.com/file/d/1uDjRoE3NJy8fQjtMtxHBEFQ048K6sl13/view?usp=sharing"
   },
   {
     id: "camlock",
     title: "Cam Lock",
     category: "AIM EXPLOITS",
-    description: "Reference footage for identifying cam lock violations. Two valid panel aimviewer clips are required.",
+    description: "When a player's camera automatically follows or snaps onto an opponent using unauthorised aim assistance. Staff MUST provide 2 valid panel aimviewer clips before banning.",
     url: "https://streamable.com/es8ih7"
   },
   {
     id: "macro",
     title: "Macro Abuse",
     category: "GAMEPLAY ABUSE",
-    description: "Examples of continuous shooting without stopping the macro. This differs from permitted crouch macro.",
+    description: "When a player continuously uses a macro while shooting their weapon, gaining an unfair gameplay advantage. This differs from permitted crouch macro. First offence: warning. Continued offence: 1-day temporary ban.",
     url: "https://medal.tv/games/roblox/clips/nUyTN6WYacAbtTbUb?invite=cr-MSxoa0csNDczODM1MTk0"
   },
   {
     id: "package",
     title: "Package Abuse",
     category: "GAMEPLAY ABUSE",
-    description: "Examples of small avatar packages being used to exploit the game's hitbox.",
+    description: "When a player abuses a small avatar package to gain an unfair advantage, such as interfering with normal hit detection. First offence: warning. Continued offence: 1-day temporary ban.",
     url: "https://medal.tv/games/screen-capture/clips/nVkzkqM4QtPqvAb1B?invite=cr-MSxveEMsNjAwNzg4MjY2"
-  },
-  {
-    id: "exploiting",
-    title: "Exploiting",
-    category: "EXPLOITS",
-    description: "Reference footage illustrating exploit-related gameplay violations.",
-    url: "https://drive.google.com/file/d/1VYvWx-c62Dwzr_WboZJCBKu7nV65jLx4/view?usp=sharing"
   },
   {
     id: "hitbox",
     title: "Hitbox Expander",
     category: "EXPLOITS",
-    description: "Reference footage for identifying hitbox-expanding exploits that make other players easier to hit.",
+    description: "When a player uses exploits to enlarge another player's hitbox, making them easier to hit. Staff must review valid evidence of the altered hit detection.",
     url: "https://drive.google.com/file/d/1AebOLqYSgXgh72hpFLbh0DK3mNOmeiN-/view?usp=sharing"
+  },
+  {
+    id: "triggerbot",
+    title: "Trigger Bot (TB)",
+    category: "AIM EXPLOITS",
+    description: "When a cheat automatically fires a player's weapon as soon as an opponent enters their crosshair, producing unnaturally precise firing reactions. Staff must distinguish this from legitimate player reactions.",
+    url: "https://drive.google.com/file/d/1dL2TC5aE7W29AjzHYFw9kwdo2YeEQptG/view?usp=sharing"
+  },
+  {
+    id: "orbit",
+    title: "Orbit",
+    category: "MOVEMENT EXPLOITS",
+    description: "When an exploiter automatically moves or spins around another player in an unnatural orbit, using movement that is not normally possible in the game.",
+    url: "https://drive.google.com/file/d/1sWb0ZA9HPSMoYP1O5plNuDf5-s5wNleZ/view?usp=sharing"
+  },
+  {
+    id: "superjump",
+    title: "Super Jump",
+    category: "MOVEMENT EXPLOITS",
+    description: "When a player uses exploits to jump significantly higher than the game's normal jumping limits. Staff should verify that the jump was not caused by a legitimate game mechanic.",
+    url: "https://drive.google.com/file/d/1Tjfu6OhwrjloW_Y09aWMIu4gq6Ba2QK8/view?usp=sharing"
+  },
+  {
+    id: "fakemacro",
+    title: "Fake Macro",
+    category: "GAMEPLAY ABUSE",
+    description: "When a player uses macro-like movement without performing the expected crouching, emote, or animation actions. Staff must check the footage carefully to distinguish this from permitted crouch macro.",
+    url: "https://drive.google.com/file/d/15FnMKfWBqzx47afxtU_4t4QmvhbAf5Ex/view?usp=sharing"
+  },
+  {
+    id: "esp",
+    title: "ESP",
+    category: "VISUAL EXPLOITS",
+    description: "When a player uses cheats to locate opponents through walls or in extremely concealed hiding spots without legitimate information about their location. Staff MUST provide 2 valid clips before banning for ESP.",
+    url: "https://drive.google.com/file/d/14XgjP4CrGa2h6uP3pU2FnLVR77YJj1ha/view?usp=sharing"
+  },
+  {
+    id: "stand",
+    title: "Stand Exploit",
+    category: "EXPLOITS",
+    description: "When a player controls alternate accounts that follow or position themselves behind the main player to provide an unfair advantage. When confirmed with valid evidence, BOTH the controlling player and the stand accounts must be banned.",
+    url: "https://drive.google.com/file/d/1R9D2N8skwKQC2U5FmfcFP0HTzuVt6nYa/view?usp=sharing"
+  },
+  {
+    id: "tp",
+    title: "TP (Teleport Exploit)",
+    category: "MOVEMENT EXPLOITS",
+    description: "When a player uses exploits to instantly teleport to another player's location instead of travelling normally. Staff should verify that the movement was not caused by lag or a legitimate teleport mechanic.",
+    url: "https://drive.google.com/file/d/1466qBH2YZEaabrfvitRsSAoFg4CHTMzZ/view?usp=sharing"
+  },
+  {
+    id: "sniperdb",
+    title: "Sniper DB",
+    category: "WEAPON EXPLOITS",
+    description: "When an exploiter removes normal bullet spread from the Double Barrel (DB) or Tactical Shotgun (Tac), allowing shots to behave with unnatural precision. This exploit affects the DB and Tac.",
+    url: "https://drive.google.com/file/d/1lJJFCf0UNuY7M3G1QpbKSup7sjeTJIh3/view?usp=sharing"
+  },
+  {
+    id: "flyhacks",
+    title: "Fly Hacks",
+    category: "MOVEMENT EXPLOITS",
+    description: "When a player uses exploits to fly freely around the map without any legitimate in-game flying ability. This allows unnatural movement through the air.",
+    url: "https://drive.google.com/file/d/1ysB9g5lSXstf84OfUD-4VWN11GF6cXxK/view?usp=sharing"
   }
 ];
 
 // ==========================================
-// STAR LOG FORMATS
+// STAR LOG TEMPLATES
 // ==========================================
 
-const starLogFormats = {
-  defenceWon: `@Star Player has successfully defended their star against challenger @Challenger.
+const starDefenceSuccess = `@Star Player has successfully defended their star against challenger @Challenger.
 
 Score: 5-4
 
 @Star Player still has 3 stars to their name.
 
-Date: MM/DD`,
+Date: MM/DD`;
 
-  defenceLost: `@Star Player has failed to defend their star against challenger @Challenger.
+const starDefenceFailure = `@Star Player has failed to defend their star against challenger @Challenger.
 
-Score: 4-5
+Score: 3-5
 
 @Star Player now has 2 stars to their name.
 
-Date: MM/DD`,
+Date: MM/DD`;
 
-  tryout: `@Player has been awarded a Star for outperforming in NA Tryouts. 🎉
+const starTryoutLog = `@Player has been awarded a Star for outperforming in NA Tryouts. 🎉
 
 @Player now has 4 stars to their name.
 
-Date: MM/DD`
-};
+Date: MM/DD`;
 
 // ==========================================
 // COMMAND FORMATS
@@ -1075,20 +1135,24 @@ const commands = [
     command: "User: (username)\nReason: (reason)\nEvidence: (clip link)"
   },
   {
+    title: "Trial Moderator Ban Request Format",
+    command: "User: (username)\nReason: (reason)\nEvidence: (clip link)"
+  },
+  {
     title: "LOA Request Format",
     command: "Discord Username:\nLOA Start Date:\nLOA End Date:\nDuration: (1–3 Days)\nReason:"
   },
   {
-    title: "Star Defence Log — Successful Defence",
-    command: starLogFormats.defenceWon
+    title: "Star Defence Log — Successful",
+    command: starDefenceSuccess
   },
   {
-    title: "Star Defence Log — Failed Defence",
-    command: starLogFormats.defenceLost
+    title: "Star Defence Log — Failed",
+    command: starDefenceFailure
   },
   {
     title: "Star Tryout Log",
-    command: starLogFormats.tryout
+    command: starTryoutLog
   }
 ];
 
@@ -1111,6 +1175,7 @@ function element(tag, className = "", text = "") {
   }
 
   node.textContent = text;
+
   return node;
 }
 
@@ -1144,6 +1209,7 @@ function createAccordion(item, open = false) {
   );
 
   details.open = open;
+
   return details;
 }
 
@@ -1156,7 +1222,10 @@ function navigate(pageId) {
     pageId = "overview";
   }
 
-  const currentSection = sections.find(item => item.id === pageId);
+  const currentSection = sections.find(
+    item => item.id === pageId
+  );
+
   breadcrumb.textContent = currentSection.name;
 
   document.querySelectorAll(".nav-button").forEach(button => {
@@ -1197,7 +1266,10 @@ function navigate(pageId) {
     history.replaceState(null, "", "#" + pageId);
   }
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
 // ==========================================
@@ -1206,6 +1278,7 @@ function navigate(pageId) {
 
 function renderOverview() {
   const hero = element("div", "hero");
+
   const title = element("h1");
 
   title.append(
@@ -1219,7 +1292,9 @@ function renderOverview() {
     "Explore Staff Rules →"
   );
 
-  button.addEventListener("click", () => navigate("rules"));
+  button.addEventListener("click", () => {
+    navigate("rules");
+  });
 
   hero.append(
     element("div", "eyebrow", "ZES HOOD MODERATION"),
@@ -1238,7 +1313,11 @@ function renderOverview() {
 
   heading.append(
     element("h2", "", "Handbook Directory"),
-    element("span", "", `${sections.length - 1} RESOURCE CATEGORIES`)
+    element(
+      "span",
+      "",
+      `${sections.length - 1} RESOURCE CATEGORIES`
+    )
   );
 
   content.append(heading);
@@ -1256,7 +1335,10 @@ function renderOverview() {
         element("p", "", section.desc)
       );
 
-      card.addEventListener("click", () => navigate(section.id));
+      card.addEventListener("click", () => {
+        navigate(section.id);
+      });
+
       grid.append(card);
     });
 
@@ -1268,7 +1350,9 @@ function renderOverview() {
 // ==========================================
 
 function renderHandbookSection(pageId) {
-  const section = sections.find(item => item.id === pageId);
+  const section = sections.find(
+    item => item.id === pageId
+  );
 
   content.append(
     createHeading(section.name, section.desc)
@@ -1277,7 +1361,9 @@ function renderHandbookSection(pageId) {
   const list = element("div", "accordion-list");
 
   (handbook[pageId] || []).forEach((item, index) => {
-    list.append(createAccordion(item, index === 0));
+    list.append(
+      createAccordion(item, index === 0)
+    );
   });
 
   content.append(list);
@@ -1297,14 +1383,16 @@ function renderRoles() {
 
   content.append(
     createNotice(
-      "Every staff member is responsible for following Zes Hood regulations and fulfilling the duties assigned to their rank. Management and senior leadership must ensure that lower-ranking staff are performing their responsibilities correctly."
+      "Every staff member is responsible for following Zes Hood regulations and fulfilling the duties assigned to their rank. Trial Moderators must submit ban requests and cannot issue in-game bans until receiving the In-Game Moderator role."
     )
   );
 
   const list = element("div", "accordion-list");
 
   handbook.roles.forEach((item, index) => {
-    list.append(createAccordion(item, index === 0));
+    list.append(
+      createAccordion(item, index === 0)
+    );
   });
 
   content.append(list);
@@ -1331,7 +1419,9 @@ function renderStarHosters() {
   const list = element("div", "accordion-list");
 
   handbook.starhosters.forEach((item, index) => {
-    list.append(createAccordion(item, index === 0));
+    list.append(
+      createAccordion(item, index === 0)
+    );
   });
 
   content.append(list);
@@ -1339,25 +1429,31 @@ function renderStarHosters() {
   const heading = element("div", "section-heading");
 
   heading.append(
-    element("h2", "", "Star Hoster Log Formats"),
-    element("span", "", "COPYABLE TEMPLATES")
+    element("h2", "", "Star Logging Formats"),
+    element("span", "", "COPY & EDIT")
   );
 
   content.append(heading);
 
-  createCommandCard(
-    "Star Defence Log — Successful Defence",
-    starLogFormats.defenceWon
+  content.append(
+    createNotice(
+      "Replace the example usernames, scores, star counts, region and dates before posting a log. Use the correct format for the result."
+    )
   );
 
   createCommandCard(
-    "Star Defence Log — Failed Defence",
-    starLogFormats.defenceLost
+    "Copy Star Defence Log — Successful",
+    starDefenceSuccess
   );
 
   createCommandCard(
-    "Star Tryout Log",
-    starLogFormats.tryout
+    "Copy Star Defence Log — Failed",
+    starDefenceFailure
+  );
+
+  createCommandCard(
+    "Copy Star Tryout Log",
+    starTryoutLog
   );
 }
 
@@ -1396,16 +1492,27 @@ function renderPromotions() {
 
   content.append(
     createMetrics([
-      { value: "65", label: "Weekly Bans" },
-      { value: "45", label: "Weekly Vouches" },
-      { value: "700+", label: "HR Promotion Requirement" }
+      {
+        value: "65",
+        label: "Weekly Bans"
+      },
+      {
+        value: "45",
+        label: "Weekly Vouches"
+      },
+      {
+        value: "700+",
+        label: "HR Promotion Requirement"
+      }
     ])
   );
 
   const list = element("div", "accordion-list");
 
   handbook.promotions.forEach((item, index) => {
-    list.append(createAccordion(item, index === 6));
+    list.append(
+      createAccordion(item, index === 6)
+    );
   });
 
   content.append(list);
@@ -1425,16 +1532,27 @@ function renderLOA() {
 
   content.append(
     createMetrics([
-      { value: "1", label: "LOA Per Week" },
-      { value: "3", label: "Maximum Standard Days" },
-      { value: "65 / 45", label: "Normal Bans / Vouches" }
+      {
+        value: "1",
+        label: "LOA Per Week"
+      },
+      {
+        value: "3",
+        label: "Maximum Standard Days"
+      },
+      {
+        value: "65 / 45",
+        label: "Normal Bans / Vouches"
+      }
     ])
   );
 
   const list = element("div", "accordion-list");
 
   handbook.loa.forEach((item, index) => {
-    list.append(createAccordion(item, index === 0));
+    list.append(
+      createAccordion(item, index === 0)
+    );
   });
 
   content.append(list);
@@ -1459,7 +1577,7 @@ function renderEvidence() {
 
   content.append(
     createNotice(
-      "For Lock, Silent Aim and Cam Lock, staff MUST collect 2 valid panel aimviewer clips before issuing a ban. Library examples are for reference only and do not replace evidence collected from the player being investigated."
+      "Lock, Silent Aim and Cam Lock require 2 valid panel aimviewer clips. ESP requires 2 valid clips. For confirmed Stand Exploit, ban both the controller and the stand accounts. Library examples are for reference only and do not replace evidence collected from the player being investigated."
     )
   );
 
@@ -1467,9 +1585,12 @@ function renderEvidence() {
 
   evidenceClips.forEach(clip => {
     const card = element("article", "evidence-card");
+
     const preview = element("div", "evidence-preview");
 
-    preview.append(element("div", "play-icon", "▶"));
+    preview.append(
+      element("div", "play-icon", "▶")
+    );
 
     const info = element("div", "evidence-info");
 
@@ -1479,14 +1600,20 @@ function renderEvidence() {
       element("p", "", clip.description)
     );
 
-    const link = element("a", "evidence-link", "Watch Evidence ↗");
+    const link = element(
+      "a",
+      "evidence-link",
+      "Watch Evidence ↗"
+    );
 
     link.href = clip.url;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
 
     info.append(link);
+
     card.append(preview, info);
+
     grid.append(card);
   });
 
@@ -1499,16 +1626,29 @@ function renderEvidence() {
 
 function createCommandCard(title, command) {
   const card = element("div", "command-card");
-  card.append(element("h3", "", title));
+
+  card.append(
+    element("h3", "", title)
+  );
 
   const commandBox = element("div", "command-box");
-  const code = element("code", "", command);
-  const copyButton = element("button", "copy-button", "Copy");
 
-  copyButton.addEventListener("click", () => copyText(command));
+  const code = element("code", "", command);
+
+  const copyButton = element(
+    "button",
+    "copy-button",
+    "Copy"
+  );
+
+  copyButton.addEventListener("click", () => {
+    copyText(command);
+  });
 
   commandBox.append(code, copyButton);
+
   card.append(commandBox);
+
   content.append(card);
 }
 
@@ -1522,13 +1662,27 @@ function renderCommands() {
 
   content.append(
     createNotice(
-      "In-game ban commands must include /zes to appeal at the end. All bans must be logged within 5 minutes."
+      "In-game ban commands must include /zes to appeal at the end. All bans must be logged within 5 minutes. Trial Moderators must submit ban requests instead of issuing in-game bans."
     )
   );
 
   commands.forEach(item => {
     createCommandCard(item.title, item.command);
   });
+
+  const requestLink = element(
+    "a",
+    "evidence-link",
+    "Open Trial Moderator Ban Requests ↗"
+  );
+
+  requestLink.href =
+    "https://discord.com/channels/1521519108162719744/1525463538955714612";
+
+  requestLink.target = "_blank";
+  requestLink.rel = "noopener noreferrer";
+
+  content.append(requestLink);
 }
 
 // ==========================================
@@ -1540,9 +1694,12 @@ let toastTimeout;
 async function copyText(value) {
   try {
     await navigator.clipboard.writeText(value);
+
     showToast("Copied to clipboard!");
   } catch (error) {
-    showToast("Copy unavailable. Please select the text manually.");
+    showToast(
+      "Copy unavailable. Please select the text manually."
+    );
   }
 }
 
@@ -1550,6 +1707,7 @@ function showToast(message) {
   const toast = document.getElementById("toast");
 
   toast.textContent = message;
+
   toast.classList.add("show");
 
   clearTimeout(toastTimeout);
@@ -1572,7 +1730,10 @@ function searchHandbook(query) {
   }
 
   content.replaceChildren(
-    createHeading("Search Results", `Results matching "${query}"`)
+    createHeading(
+      "Search Results",
+      `Results matching "${query}"`
+    )
   );
 
   breadcrumb.textContent = "Search Results";
@@ -1584,30 +1745,42 @@ function searchHandbook(query) {
 
   let results = 0;
 
+  // SEARCH HANDBOOK CONTENT
+
   Object.entries(handbook).forEach(([sectionId, items]) => {
     items.forEach((item, index) => {
-      const text = `${item.title} ${item.content}`.toLowerCase();
+      const searchableText =
+        `${item.title} ${item.content}`.toLowerCase();
 
-      if (!text.includes(query)) return;
+      if (!searchableText.includes(query)) {
+        return;
+      }
 
       results++;
 
-      const result = element("button", "search-result");
+      const result = element(
+        "button",
+        "search-result"
+      );
 
       result.append(
         element("strong", "", item.title),
         element(
           "p",
           "",
-          item.content.slice(0, 190).replaceAll("\n", " ") + "..."
+          item.content
+            .slice(0, 190)
+            .replaceAll("\n", " ") + "..."
         )
       );
 
       result.addEventListener("click", () => {
         searchInput.value = "";
+
         navigate(sectionId);
 
-        const accordions = content.querySelectorAll(".accordion");
+        const accordions =
+          content.querySelectorAll(".accordion");
 
         if (accordions[index]) {
           accordions[index].open = true;
@@ -1623,36 +1796,58 @@ function searchHandbook(query) {
     });
   });
 
-  evidenceClips.forEach(clip => {
-    const text = `${clip.title} ${clip.category} ${clip.description}`.toLowerCase();
+  // SEARCH EVIDENCE
 
-    if (!text.includes(query)) return;
+  evidenceClips.forEach(clip => {
+    const searchableText =
+      `${clip.title} ${clip.category} ${clip.description}`
+        .toLowerCase();
+
+    if (!searchableText.includes(query)) {
+      return;
+    }
 
     results++;
 
-    const result = element("button", "search-result");
+    const result = element(
+      "button",
+      "search-result"
+    );
 
     result.append(
-      element("strong", "", clip.title + " — Ban Evidence"),
+      element(
+        "strong",
+        "",
+        clip.title + " — Ban Evidence"
+      ),
       element("p", "", clip.description)
     );
 
     result.addEventListener("click", () => {
       searchInput.value = "";
+
       navigate("evidence");
     });
 
     content.append(result);
   });
 
-  commands.forEach(item => {
-    const text = `${item.title} ${item.command}`.toLowerCase();
+  // SEARCH COMMANDS
 
-    if (!text.includes(query)) return;
+  commands.forEach(item => {
+    const searchableText =
+      `${item.title} ${item.command}`.toLowerCase();
+
+    if (!searchableText.includes(query)) {
+      return;
+    }
 
     results++;
 
-    const result = element("button", "search-result");
+    const result = element(
+      "button",
+      "search-result"
+    );
 
     result.append(
       element("strong", "", item.title),
@@ -1661,6 +1856,7 @@ function searchHandbook(query) {
 
     result.addEventListener("click", () => {
       searchInput.value = "";
+
       navigate("commands");
     });
 
@@ -1669,7 +1865,9 @@ function searchHandbook(query) {
 
   if (results === 0) {
     content.append(
-      createNotice("No matching results found. Try another search term.")
+      createNotice(
+        "No matching results found. Try another search term."
+      )
     );
   }
 }
@@ -1679,7 +1877,11 @@ function searchHandbook(query) {
 // ==========================================
 
 sections.forEach(section => {
-  const button = element("button", "nav-button");
+  const button = element(
+    "button",
+    "nav-button"
+  );
+
   button.dataset.page = section.id;
 
   button.append(
@@ -1689,6 +1891,7 @@ sections.forEach(section => {
 
   button.addEventListener("click", () => {
     searchInput.value = "";
+
     navigate(section.id);
   });
 
@@ -1709,27 +1912,35 @@ document.addEventListener("keydown", event => {
     event.key.toLowerCase() === "k"
   ) {
     event.preventDefault();
+
     searchInput.focus();
   }
 
   if (event.key === "Escape") {
     searchInput.blur();
+
     closeMenu();
   }
 });
 
-document.getElementById("menuButton").addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-  overlay.classList.toggle("show");
-});
+document
+  .getElementById("menuButton")
+  .addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+
+    overlay.classList.toggle("show");
+  });
 
 overlay.addEventListener("click", closeMenu);
 
 window.addEventListener("hashchange", () => {
   const page = location.hash.slice(1);
 
-  if (sections.some(section => section.id === page)) {
+  if (
+    sections.some(section => section.id === page)
+  ) {
     searchInput.value = "";
+
     navigate(page);
   }
 });
